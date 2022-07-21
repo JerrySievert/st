@@ -1,0 +1,19 @@
+{
+  "name": "st",
+  "version": "1.0.0",
+  "description": "a stupid/simple test engine",
+  "main": "index.mjs",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "node tests/tests.mjs"
+  },
+  "keywords": [
+    "st",
+    "test"
+  ],
+  "author": "Jerry Sievert (code@legitimatesounding.com)",
+  "license": "BSD-3-Clause"
+}
