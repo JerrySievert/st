@@ -1,6 +1,6 @@
 {
   "name": "st",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a stupid/simple test engine",
   "main": "index.mjs",
   "directories": {

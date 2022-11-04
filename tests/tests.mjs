@@ -1,5 +1,5 @@
-import { context, dotreporter } from "../index.mjs";
+import { context, dotreporter } from '../index.mjs';
 
-import * as assert from "./assert.test.mjs";
+import './assert.test.mjs';
 
 dotreporter(context);
