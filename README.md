@@ -1,8 +1,10 @@
 # ST (Stupid/Simple Test)
 
-A dumb test framework for Javascript.
+A dumb test framework for Javascript for ES Modules.
 
-Quickstart in Node:
+## Quickstart in Node:
+
+`test.mjs`:
 
 ```
 const { assert, context, dotreporter, test } = import 'st';
@@ -14,4 +16,24 @@ await test('1 + 1 = 2', async () => {
 });
 
 dotreporter(context);
+```
+
+```
+$ node test.mjs
+```
+
+## Using the `st` Test Runner
+
+`test.mjs`:
+
+```
+const { assert, test } = import 'st';
+
+test('normal test', () => {
+  assert.eq(1, 1, '1 should equal 1');
+});
+```
+
+```
+$ st -spec test.mjs
 ```

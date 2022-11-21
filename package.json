@@ -1,14 +1,17 @@
 {
   "name": "st",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "a stupid/simple test engine",
   "main": "index.mjs",
   "directories": {
     "lib": "lib",
     "test": "tests"
   },
+  "bin": {
+    "st": "./bin/st.mjs"
+  },
   "scripts": {
-    "test": "node tests/tests.mjs"
+    "test": "./bin/st.mjs -spec tests/tests.mjs"
   },
   "keywords": [
     "st",
