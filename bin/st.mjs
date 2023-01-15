@@ -35,3 +35,4 @@ for (const test of context.test_statuses) {
 }
 
 context.write(`\n${failure_count} failure${failure_count === 1 ? '' : 's'}.\n`);
+process.exit(failure_count ? 1 : 0);
