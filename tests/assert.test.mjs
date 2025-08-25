@@ -1,3 +1,5 @@
+'use strict';
+
 import { test } from '../index.mjs';
 
 await test('assert.eq', async (t) => {
@@ -33,4 +35,8 @@ test('assert.lt', async (t) => {
   t.assert.lt(1, 2, 'smaller numbers should pass');
 
   t.assert.lt('a', 'b', 'smaller strings should pass');
+});
+
+test('assert.ok', async (t) => {
+  t.assert.ok(true, 'true should pass');
 });
